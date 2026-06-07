@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>DevRoadmap – Zero to Big Tech Engineer</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Complete 8-phase software developer roadmap from Java fundamentals to AI skills. Build real projects and land your first job." />
+    <link rel="canonical" href="https://mysite.dev/" />
+
+    <link rel="icon" href="favicon.png">
+
+    <meta name="theme-color" content="#020617">
+
+    <!-- Open Graph (for sharing) -->
+    <meta property="og:title" content="DevRoadmap – Zero to Big Tech Engineer" />
+    <meta property="og:description" content="Complete roadmap to become a software developer." />
+    <meta property="og:image" content="og-image.png" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- SCROLL PROGRESS -->
+    <div id="progress-bar"></div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <a href="#hero" class="nav-logo">dev<span>.</span><span class="logo-dot"></span></a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#roadmap">Phases</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#checklist">Checklist</a></li>
+            <li><a href="#finale">Finale</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+            <div class="nav-hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge">🚀 Complete Developer Roadmap</div>
+            <h1 class="hero-title">
+                <span class="line1">From Zero to</span>
+                <span class="line2">Big Tech Engineer</span>
+            </h1>
+            <p class="hero-sub">
+                A structured, phase-by-phase guide from programming fundamentals to landing your first software developer role at a top tech company.
+            </p>
+            <div class="hero-cta">
+                <a href="#roadmap" class="btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                    Start the Journey
+                </a>
+                <a href="#checklist" class="btn-outline">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 11l3 3L22 4" /><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" /></svg>
+                    View Checklist
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-num" data-target="8">0</div>
+                    <div class="hero-stat-label">Phases</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-num" data-target="8">0</div>
+                    <div class="hero-stat-label">Months</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-num" data-target="10">0</div>
+                    <div class="hero-stat-label">Projects</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-num" data-target="300">0</div>
+                    <div class="hero-stat-label">DSA Problems</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section id="overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="ov-icon" style="background:var(--p1g);color:var(--p1)">☕</div>
+                    <div class="ov-text">
+                        <strong>Java Mastery</strong>
+                        <span>OOP to Collections</span>
+                    </div>
+                </div>
+                <div class="overview-card">
+                    <div class="ov-icon" style="background:var(--p2g);color:var(--p2)">🧠</div>
+                    <div class="ov-text">
+                        <strong>DSA &amp; LeetCode</strong>
+                        <span>200–300 Problems</span>
+                    </div>
+                </div>
+                <div class="overview-card">
+                    <div class="ov-icon" style="background:var(--p4g);color:var(--p4)">🌱</div>
+                    <div class="ov-text">
+                        <strong>Spring Boot APIs</strong>
+                        <span>Production-ready apps</span>
+                    </div>
+                </div>
+                <div class="overview-card">
+                    <div class="ov-icon" style="background:var(--p7g);color:var(--p7)">🤖</div>
+                    <div class="ov-text">
+                        <strong>AI Integration</strong>
+                        <span>LangChain + RAG + MCP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROADMAP PHASES -->
+    <section id="roadmap">
+        <div class="container">
+            <div class="section-label">The Path Forward</div>
+            <h2 class="section-title">8-Phase Roadmap</h2>
+            <p class="section-sub">Every phase builds on the last. Follow this sequence for maximum momentum and retention.</p>
+
+            <div class="timeline">
+
+                <!-- Phase 1 -->
+                <div class="phase-card phase-1" data-phase="1">
+                    <div class="phase-node">
+                        <div class="phase-icon">☕</div>
+                        <span class="phase-num">01</span>
+                    </div>
+                    <div class="phase-body">
+                        <div class="phase-header">
+                            <div class="phase-title-group">
+                                <div class="phase-timeline-label">Phase 1</div>
+                                <div class="phase-title">Programming Fundamentals</div>
+                            </div>
+                            <span class="phase-duration">0–2 Months</span>
+                        </div>
+                        <div class="phase-grid">
+                            <div>
+                                <div class="phase-section-label">Topics</div>
+                                <ul class="topic-list">
+                                    <li>Variables &amp; Data Types</li>
+                                    <li>Operators, Loops &amp; Conditions</li>
+                                    <li>Methods &amp; Arrays &amp; Strings</li>
+                                    <li>Object-Oriented Programming</li>
+                                    <li>Exception Handling</li>
+                                    <li>Collections Framework</li>
+                                    <li>File Handling</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="phase-section-label">Resources</div>
+                                <div class="resource-links">
+                                    <a href="https://www.youtube.com/watch?v=bm0OyhwFDuY&list=PLsyeobzWxl7pe_IiTfNyr55kwJPWbgxB5" target="_blank" class="resource-btn">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6a3 3 0 00-2.1 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zm-13.9 9.4V8.4l6.3 3.6-6.3 3.6z" /></svg>
+                                        Java – Telusko
+                                    </a>
+                                    <a href="https://www.youtube.com/watch?v=BSVKUk58K6U&list=PL9gnSGHSqcno1G3XjUbwzXHL8_EttOuKk" target="_blank" class="resource-btn">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6a3 3 0 00-2.1 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zm-13.9 9.4V8.4l6.3 3.6-6.3 3.6z" /></svg>
+                                        OOP – Kunal
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="goal-box">
+                            <strong>🎯 Goal</strong>
+                            Master Java fundamentals so writing code becomes second nature. Build a strong foundation that makes every next topic easier.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="phase-card phase-2" data-phase="2">
+                    <div class="phase-node">
+                        <div class="phase-icon">🧠</div>
+                        <span class="phase-num">02</span>
+                    </div>
+                    <div class="phase-body">
+                        <div class="phase-header">
+                            <div class="phase-title-group">
+                                <div class="phase-timeline-label">Phase 2</div>
+                                <div class="phase-title">Problem Solving &amp; DSA</div>
+                            </div>
+                            <span class="phase-duration">2–4 Months</span>
+                        </div>
+                        <div class="phase-grid">
+                            <div>
+                                <div class="phase-section-label">Topics</div>
+                                <ul class="topic-list">
+                                    <li>Time &amp; Space Complexity</li>
+                                    <li>Arrays, Strings, Hashing</li>
+                                    <li>Linked Lists</li>
+                                    <li>Stacks &amp; Queues</li>
+                                    <li>Trees &amp; BSTs &amp; Heaps</li>
+                                    <li>Graphs</li>
+                                    <li>Dynamic Programming</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="phase-section-label">Resources</div>
+                                <div class="resource-links">
+                                    <a href="https://www.youtube.com/watch?v=rZ41y93P2Qo&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ" target="_blank" class="resource-btn">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6a3 3 0 00-2.1 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zm-13.9 9.4V8.4l6.3 3.6-6.3 3.6z" /></svg>
+                                        DSA – Kunal
+                                    </a>
+                                </div>
+                                <br />
+                                <div class="phase-section-label" style="margin-top:0.5rem">Target</div>
+                                <div style="font-size:0.85rem;color:var(--text2)">✅ Solve <strong style="color:var(--p2)">200–300</strong> problems on LeetCode</div>
+                            </div>
+                        </div>
+                        <div class="goal-box">
+                            <strong>🎯 Goal</strong>
+                            Develop strong problem-solving skills and think like a software engineer. Learn to write efficient, optimized solutions with confidence.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="phase-card phase-3" data-phase="3">
+                    <div class="phase-node">
+                        <div class="phase-icon">🔧</div>
+                        <span class="phase-num">03</span>
+                    </div>
+                    <div class="phase-body">
+                        <div class="phase-header">
+                            <div class="phase-title-group">
+                                <div class="phase-timeline-label">Phase 3 (Parallel)</div>
+                                <div class="phase-title">Development Tools</div>
+                            </div>
+                            <span class="phase-duration">Ongoing</span>
+                        </div>
+                        <div class="phase-grid">
+                            <div>
+                                <div class="phase-section-label">Topics</div>
+                                <ul class="topic-list">
+                                    <li>Git &amp; GitHub</li>
+                                    <li>IntelliJ IDEA / VS Code</li>
+                                    <li>Maven &amp; Gradle</li>
+                                    <li>Terminal &amp; CLI Basics</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="phase-section-label">Why It Matters</div>
+                                <div style="font-size:0.85rem;color:var(--text2);line-height:1.6">
+                                    Learn these tools <em>in parallel</em> with Phase 1–2. Version control and IDE efficiency are non-negotiable skills in any real development team.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="goal-box">
+                            <strong>🎯 Goal</strong>
+                            Work like a professional developer and manage projects efficiently. Understand the tools used in real software teams.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 4 -->
+                <div class="phase-card phase-4" data-phase="4">
+                    <div class="phase-node">
+                        <div class="phase-icon">🌱</div>
+                        <span class="phase-num">04</span>
+                    </div>
+                    <div class="phase-body">
+                        <div class="phase-header">
+                            <div class="phase-title-group">
+                                <div class="phase-timeline-label">Phase 4</div>
+                                <div class="phase-title">Backend Development</div>
+                            </div>
+                            <span class="phase-duration">4–6 Months</span>
+                        </div>
+                        <div class="phase-grid">
+                            <div>
+                                <div class="phase-section-label">Topics</div>
+                                <ul class="topic-list">
+                                    <li>Spring Boot</li>
+                                    <li>REST APIs</li>
+                                    <li>Spring Data JPA</li>
+                                    <li>Spring Security</li>
+                                    <li>JWT Authentication</li>
+                                    <li>Microservices (Basics)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="phase-section-label">Resources</div>
+                                <div class="resource-links">
+                                    <a href="https://www.youtube.com/watch?v=gJrjgg1KVL4&t=975s" target="_blank" class="resource-btn">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6a3 3 0 00-2.1 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zm-13.9 9.4V8.4l6.3 3.6-6.3 3.6z" /></svg>
+                                        Spring Boot – Mosh
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="goal-box">
+                            <strong>🎯 Goal</strong>
+                            Build production-ready backend applications using modern Java technologies. Understand how real-world web applications are developed.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 5 -->
+                <div class="phase-card phase-5" data-phase="5">
+                    <div class="phase-node">
+                        <div class="phase-icon">🗄</div>
+                        <span class="phase-num">05</span>
+                    </div>
+                    <div class="phase-body">
+                        <div class="phase-header">
+                            <div class="phase-title-group">
+                                <div class="phase-timeline-label">Phase 5</div>
+                                <div class="phase-title">Databases &amp; SQL</div>
+                            </div>
+                            <span class="phase-duration">Alongside Phase 4</span>
+                        </div>
+                        <div class="phase-grid">
+                            <div>
+                                <div class="phase-section-label">Topics</div>
+                                <ul class="topic-list">
+                                    <li>SQL Fundamentals</li>
+                                    <li>MySQL / PostgreSQL</li>
+                                    <li>Database Design</li>
+                                    <li>Joins &amp; Indexing</li>
+                                    <li>Transactions</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="phase-section-label">Resources</div>
+                                <div class="resource-links">
+                                    <a href="https://youtu.be/JtaOmwnR6AM?si=x0Ql_bZWJ2kfMg3l" target="_blank" class="resource-btn">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6a3 3 0 00-2.1 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zm-13.9 9.4V8.4l6.3 3.6-6.3 3.6z" /></svg>
+                                        SQL Full Course
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="goal-box">
+                            <strong>🎯 Goal</strong>
+                            Design efficient databases and write optimized SQL queries. Store, retrieve, and manage application data with confidence.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 6 -->
+                <div class="phase-card phase-6" data-phase="6">
+                    <div class="phase-node">
+                        <div class="phase-icon">🏗</div>
+                        <span class="phase-num">06</span>
+                    </div>
+                    <div class="phase-body">
+                        <div class="phase-header">
+                            <div class="phase-title-group">
+                                <div class="phase-timeline-label">Phase 6</div>
+                                <div class="phase-title">Build Projects</div>
+                            </div>
+                            <span class="phase-duration">Ongoing</span>
+                        </div>
+                        <div class="goal-box" style="margin-bottom:0">
+                            <strong>🎯 Goal</strong>
+                            Turn knowledge into real experience through practical projects. Build a portfolio that proves your skills to recruiters.
+                        </div>
+                        <div style="margin-top:1.25rem">
+                            <div class="phase-section-label">Industry-Level Projects — See Projects Section Below ↓</div>
+                            <div style="font-size:0.85rem;color:var(--text2);line-height:1.6;margin-top:0.5rem">
+                                Build these 10 projects to showcase your full-stack capabilities and stand out to employers.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 7 -->
+                <div class="phase-card phase-7" data-phase="7">
+                    <div class="phase-node">
+                        <div class="phase-icon">🤖</div>
+                        <span class="phase-num">07</span>
+                    </div>
+                    <div class="phase-body">
+                        <div class="phase-header">
+                            <div class="phase-title-group">
+                                <div class="phase-timeline-label">Phase 7</div>
+                                <div class="phase-title">AI Skills (Future Edge)</div>
+                            </div>
+                            <span class="phase-duration">After Phase 4–5</span>
+                        </div>
+                        <div class="phase-grid">
+                            <div>
+                                <div class="phase-section-label">Topics</div>
+                                <ul class="topic-list">
+                                    <li>Python Fundamentals</li>
+                                    <li>Prompt Engineering</li>
+                                    <li>OpenAI API</li>
+                                    <li>LangChain</li>
+                                    <li>RAG (Retrieval-Augmented Gen)</li>
+                                    <li>AI Agents</li>
+                                    <li>MCP (Model Context Protocol)</li>
+                                    <li>AI Integration with Java</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="phase-section-label">Why This Matters</div>
+                                <div style="font-size:0.85rem;color:var(--text2);line-height:1.6">
+                                    AI skills are becoming a multiplier for every developer. Combining software engineering expertise with AI knowledge puts you ahead of 90% of applicants in 2025+.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="goal-box">
+                            <strong>🎯 Goal</strong>
+                            Stay ahead by combining software engineering with AI. Build intelligent applications that solve real-world problems.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 8 -->
+                <div class="phase-card phase-8" data-phase="8">
+                    <div class="phase-node">
+                        <div class="phase-icon">🏁</div>
+                        <span class="phase-num">08</span>
+                    </div>
+                    <div class="phase-body">
+                        <div class="phase-header">
+                            <div class="phase-title-group">
+                                <div class="phase-timeline-label">Phase 8</div>
+                                <div class="phase-title">Career Preparation</div>
+                            </div>
+                            <span class="phase-duration">Final Stage</span>
+                        </div>
+                        <div class="phase-grid">
+                            <div>
+                                <div class="phase-section-label">Topics</div>
+                                <ul class="topic-list">
+                                    <li>Resume Building</li>
+                                    <li>GitHub Portfolio</li>
+                                    <li>LinkedIn Profile</li>
+                                    <li>Mock Interviews</li>
+                                    <li>System Design (Basics)</li>
+                                    <li>Docker Basics</li>
+                                    <li>Deployment &amp; CI/CD</li>
+                                    <li>Apply for Roles &amp; Internships</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="phase-section-label">Targets</div>
+                                <ul class="topic-list">
+                                    <li>3–5 impressive projects live</li>
+                                    <li>Active GitHub with green squares</li>
+                                    <li>Professional portfolio site</li>
+                                    <li>Apply to jobs <em>consistently</em></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="goal-box">
+                            <strong>🎯 Goal</strong>
+                            Present your skills professionally and prepare for interviews. Start applying consistently until you land your first developer role.
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /timeline -->
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-label">Phase 6</div>
+            <h2 class="section-title">10 Industry Projects</h2>
+            <p class="section-sub">Each project demonstrates a different skill set. Build all ten and your portfolio becomes undeniable.</p>
+
+            <div class="projects-grid" id="projects-grid">
+                <!-- JS-rendered -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CHECKLIST -->
+    <section id="checklist">
+        <div class="container">
+            <div class="checklist-container">
+                <div class="section-label">Final Checklist</div>
+                <h2 class="section-title">Are You Ready?</h2>
+                <p class="section-sub" style="margin-bottom:2rem">Tick off each milestone as you complete it. Your progress is saved locally.</p>
+
+                <!-- Ring progress -->
+                <div class="progress-ring-container">
+                    <div class="progress-ring-wrap">
+                        <svg width="90" height="90" viewBox="0 0 90 90">
+                            <circle cx="45" cy="45" r="38" fill="none" stroke="var(--border)" stroke-width="6" />
+                            <circle id="ring-circle" cx="45" cy="45" r="38" fill="none" stroke="var(--p8)" stroke-width="6" stroke-dasharray="238.76" stroke-dashoffset="238.76" stroke-linecap="round" transform="rotate(-90 45 45)" style="transition:stroke-dashoffset 0.6s ease" />
+                        </svg>
+                        <div class="progress-ring-text">
+                            <span class="progress-ring-num" id="ring-num">0%</span>
+                            <span class="progress-ring-sub">Done</span>
+                        </div>
+                    </div>
+                    <div class="progress-ring-label">
+                        <strong id="ring-label">Keep going!</strong>
+                        Complete all milestones to be job-ready as a software developer.
+                    </div>
+                </div>
+
+                <div class="checklist-items" id="checklist-items">
+                    <!-- JS rendered -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOWNLOAD BUTTON -->
+    <div style="display: flex; justify-content: center; margin-top: 2.5rem;">
+        <a href="assets/SWD_roadmap.pdf"
+        download="Software_Developer_Roadmap.pdf"
+        class="btn-primary"
+        style="
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 1rem 2.5rem;
+        background: linear-gradient(135deg, var(--accent), var(--p2));
+        color: #fff;
+        border: none;
+        border-radius: 14px;
+        font-family: var(--font-body);
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        transition: var(--transition);
+        box-shadow: 0 0 40px rgba(79, 158, 255, 0.25);
+        ">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        Download My Roadmap PDF
+    </a>
+</div>
+
+<!-- FINALE -->
+<section id="finale">
+    <div class="finale-bg"></div>
+    <div class="container">
+        <div class="finale-content">
+            <span class="finale-emoji">🚀</span>
+            <h2 class="finale-title">Your Breakthrough is Closer Than You Think</h2>
+            <p class="finale-quote">
+                &ldquo;Stay consistent, trust the process, and keep building every single day. Small progress compounds into extraordinary results. Your first software developer job isn't a matter of luck — it's the result of disciplined learning, real projects, and relentless consistency.&rdquo;
+            </p>
+            <div class="hero-cta">
+                <a href="#roadmap" class="btn-primary">
+                    Start Phase 1 Now →
+                </a>
+                <a href="#checklist" class="btn-outline">
+                    Track Progress
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-logo">dev<span>.</span>roadmap</div>
+        <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#checklist">Checklist</a></li>
+        </ul>
+        <div class="footer-social">
+            <a href="https://github.com/logesh-codes" target="_blank" class="social-btn" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" /></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/logeshp2007/" target="_blank" class="social-btn" title="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
+            </a>
+            <a href="https://www.instagram.com/devlogesh.ai/" target="_blank" class="social-btn" title="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" /></svg>
+            </a>
+            <a href="https://www.youtube.com/@devlogeshai" target="_blank" class="social-btn" title="YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6a3 3 0 00-2.1 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zm-13.9 9.4V8.4l6.3 3.6-6.3 3.6z" /></svg>
+            </a>
+            <!-- Profile Photo -->
+            <a href="#" class="footer-photo-wrapper" title="Logesh P">
+                <img src="assets/profile.jpg" alt="Logesh P" class="footer-photo" />
+            </a>
+        </div>
+        <p class="footer-copy">Zero to Big Tech — Structured Roadmap for Developers</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
